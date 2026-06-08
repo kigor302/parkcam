@@ -1,0 +1,14 @@
+[Unit]
+Description=ParkCam parking security camera
+After=network.target
+
+[Service]
+Type=simple
+User=pi
+WorkingDirectory=/home/pi/projects/parkcam
+ExecStart=/home/pi/projects/parkcam/parkcam
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

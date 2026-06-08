@@ -1,4 +1,0 @@
-fast-alpr
-opencv-python
-numpy
-pytest
